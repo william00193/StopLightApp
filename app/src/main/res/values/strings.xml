@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HW2Exercise4</string>
+
+
+    <string name="Stop">Stop!</string>
+    <string name="Wait">Wait..</string>
+    <string name="Go">Go!</string>
+</resources>
