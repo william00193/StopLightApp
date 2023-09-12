@@ -43,14 +43,39 @@ class MainActivity : AppCompatActivity() {
             clickedCount++
 
 
-//Looping through each of the different images, with descriptions attached
+////Looping through each of the different images, with descriptions attached
+//            when (clickedCount % 3) {
+//                0 -> change(New(R.drawable.stop, "Stop!"))
+//                1 -> change(New(R.drawable.go, "Go!"))
+//                2 -> change(New(R.drawable.slow, "Wait.."))
+//            }
+//        }
+//    }
+            //Looping through each of the different images, with descriptions attached
             when (clickedCount % 3) {
-                0 -> change(New(R.drawable.stop, "Stop!"))
-                1 -> change(New(R.drawable.go, "Go!"))
-                2 -> change(New(R.drawable.slow, "Wait.."))
+
+            0 -> {
+               change(New(R.drawable.stop, "Stop!"))
+                binding.button.setBackgroundColor(getResources().getColor(R.color.MSU_Maroon))
+                binding.button.setTextColor(getResources().getColor(R.color.white))
+            }
+
+            1 ->   {
+               change(New(R.drawable.go, "Go!"))
+                binding.button.setBackgroundColor(getResources().getColor(R.color.green))
+                binding.button.setTextColor(getResources().getColor(R.color.black))
+            }
+
+            2 -> {
+                 change(New(R.drawable.slow, "Wait.."))
+                binding.button.setBackgroundColor(getResources().getColor(R.color.yellow))
+                binding.button.setTextColor(getResources().getColor(R.color.black))
+            }
             }
         }
     }
+
+
 
 
     //Setting button text equal to description
